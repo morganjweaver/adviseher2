@@ -1,0 +1,9 @@
+{% if match_list %}
+    <ul>
+    {% for Profile in match_list %}
+        <li><a href="/find_matches/{{ profile.id }}/">{{ profile.userid }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No matches are available.</p>
+{% endif %}
